@@ -1,5 +1,5 @@
 {% set name = "dedupe-variable-datetime" %}
-{% set version = "0.1.5" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dedupe-variable-datetime-{{ version }}.tar.gz
-  sha256: 3af618c39471b046e634db5f0c4aae9e92d65217f03c5cdfc0657e6f7a42c416
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 242a66f480503773d94f5a5a58e14f997bdbd009e1a6e2c61a470b14d64149f8
 
 build:
   number: 0
